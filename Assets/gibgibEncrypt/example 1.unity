@@ -136,16 +136,16 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 104394882}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 523.73975, y: 674.8285, z: 0}
+  m_LocalPosition: {x: -1418.8624, y: 654.54517, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1764890524}
-  m_RootOrder: 0
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.90061307}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 20.683, y: 10.095}
-  m_SizeDelta: {x: -41.4, y: -20.19}
+  m_AnchorMin: {x: 0, y: 0.896}
+  m_AnchorMax: {x: 0.24570821, y: 0.9857742}
+  m_AnchoredPosition: {x: 2.5, y: 3.7163696}
+  m_SizeDelta: {x: -5, y: -7.4327}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &104394884
 MonoBehaviour:
@@ -179,7 +179,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Encrypt Content\uFF1A\n"
+  m_Text: "Decrypt Content\uFF1A\n"
 --- !u!222 &104394885
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -421,18 +421,18 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 253882109}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -512.95667, y: 339.50024, z: 0}
+  m_LocalPosition: {x: 479.58435, y: 532.29987, z: 0}
   m_LocalScale: {x: 1.0000029, y: 1.0000029, z: 1.0000029}
   m_Children:
   - {fileID: 1882552225}
   - {fileID: 1873020364}
   m_Father: {fileID: 1764890524}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -9.899902, y: 339.50024}
-  m_SizeDelta: {x: -19.800049, y: 505}
+  m_AnchorMin: {x: 0.24570821, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5291292}
+  m_AnchoredPosition: {x: 16.579956, y: 510.79993}
+  m_SizeDelta: {x: -33.159973, y: 76.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &253882111
 MonoBehaviour:
@@ -496,7 +496,7 @@ MonoBehaviour:
   m_Text: 
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
-  m_ReadOnly: 0
+  m_ReadOnly: 1
 --- !u!114 &253882112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -597,7 +597,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "gibgib's Encrypt \n"
+  m_Text: "gibgib's Decrypt \n"
 --- !u!222 &323094193
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -629,18 +629,18 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 340314002}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -511.4569, y: -77, z: 0}
+  m_LocalPosition: {x: -1421.3373, y: -695.09, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 120843127}
   - {fileID: 1815913201}
   m_Father: {fileID: 1764890524}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -8.4001465, y: -77}
-  m_SizeDelta: {x: -16.699951, y: 120}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.24570821, y: 0}
+  m_AnchoredPosition: {x: 0.025146484, y: 43}
+  m_SizeDelta: {x: -0.049744, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &340314004
 MonoBehaviour:
@@ -868,16 +868,16 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 505002705}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.5269775, y: -858.3849, z: 0}
+  m_LocalPosition: {x: -69.118286, y: -857.31995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 209536540}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.19500001, y: 0}
-  m_AnchorMax: {x: 0.79956025, y: 0.099125}
-  m_AnchoredPosition: {x: 13, y: 6.455078}
-  m_SizeDelta: {x: -26, y: -12.91}
+  m_AnchorMin: {x: 0.14600001, y: 0}
+  m_AnchorMax: {x: 0.804, y: 0.10331255}
+  m_AnchoredPosition: {x: 25.1, y: 3.5}
+  m_SizeDelta: {x: -50.1, y: -7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &505002707
 MonoBehaviour:
@@ -942,16 +942,16 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 536580919}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -497.0572, y: 665.0453, z: 0}
-  m_LocalScale: {x: 1.0000029, y: 1.0000029, z: 1.0000029}
+  m_LocalPosition: {x: 478.3424, y: 656.8387, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1764890524}
-  m_RootOrder: 7
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.90061307}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 5.9996, y: 0.31175}
-  m_SizeDelta: {x: -12, y: -0.62355}
+  m_AnchorMin: {x: 0.24570821, y: 0.896}
+  m_AnchorMax: {x: 1, y: 0.9857742}
+  m_AnchoredPosition: {x: 15.338013, y: 6.0098877}
+  m_SizeDelta: {x: -30.575, y: -43}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &536580921
 MonoBehaviour:
@@ -976,7 +976,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 54
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 5
     m_MaxSize: 54
     m_Alignment: 3
@@ -985,7 +985,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Encrypt Header\uFF1A\n"
+  m_Text: "Decrypt Header\uFF1A\n"
 --- !u!222 &536580922
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1017,18 +1017,18 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 616231526}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -490.10004, z: 0}
+  m_LocalPosition: {x: 479.70435, y: -216.29999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1540724985}
   - {fileID: 1910876743}
   m_Father: {fileID: 1764890524}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMin: {x: 0.24570821, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -490.10004}
-  m_SizeDelta: {x: 0, y: 526.6}
+  m_AnchoredPosition: {x: 16.699951, y: -216.29999}
+  m_SizeDelta: {x: -33.3, y: 1074.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &616231528
 MonoBehaviour:
@@ -1138,7 +1138,7 @@ GameObject:
   - component: {fileID: 840702516}
   - component: {fileID: 840702515}
   m_Layer: 5
-  m_Name: InputField
+  m_Name: InputFieldC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1151,18 +1151,18 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 840702513}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 513.95667, y: 228.49997, z: 0}
+  m_LocalPosition: {x: -1425.8374, y: 69.70001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1225101423}
   - {fileID: 1117431311}
   m_Father: {fileID: 1764890524}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 10.899902, y: 228.49997}
-  m_SizeDelta: {x: -22, y: 727}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0.24570821, y: 0.5}
+  m_AnchoredPosition: {x: -4.4748535, y: 69.7}
+  m_SizeDelta: {x: 8.9501, y: 1044.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &840702515
 MonoBehaviour:
@@ -1327,7 +1327,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: start Encrypt
+  m_Text: start Decrypt
 --- !u!222 &944536162
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1358,16 +1358,16 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1092405102}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -831.4951, y: -848.02747, z: 0}
+  m_LocalPosition: {x: -1609.2589, y: -860.8175, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 209536540}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.18111114, y: 0.11460417}
-  m_AnchoredPosition: {x: -7.5999756, y: 1.9525146}
-  m_SizeDelta: {x: -15.1, y: -21.9}
+  m_AnchorMax: {x: 0.14600001, y: 0.10331255}
+  m_AnchoredPosition: {x: -0.009765625, y: 0.0024414062}
+  m_SizeDelta: {x: 0.019897, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1092405104
 MonoBehaviour:
@@ -1401,9 +1401,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Ver:1.00
-
-'
+  m_Text: Ver:1.00
 --- !u!222 &1092405105
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1508,16 +1506,16 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1119842146}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -505.43173, y: 34.904476, z: 0}
+  m_LocalPosition: {x: -1412.8624, y: -552.43427, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1764890524}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.56083876}
-  m_AnchoredPosition: {x: -2.375, y: -10.000004}
-  m_SizeDelta: {x: -28.8, y: 14}
+  m_AnchorMin: {x: 0, y: 0.07338698}
+  m_AnchorMax: {x: 0.24570821, y: 0.18180653}
+  m_AnchoredPosition: {x: 8.5, y: -2.7000122}
+  m_SizeDelta: {x: -17, y: 5.4001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1119842148
 MonoBehaviour:
@@ -1551,7 +1549,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Encrypt Password\uFF1A\n"
+  m_Text: "Decrypt Password\uFF1A\n"
 --- !u!222 &1119842149
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1625,7 +1623,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Enter need Encrypt Content...
+  m_Text: Enter need Decrypt Content...
 --- !u!222 &1225101425
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1721,16 +1719,16 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1498981960}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.4995728, y: -179.76117, z: 0}
+  m_LocalPosition: {x: 479.44824, y: 393.07855, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1764890524}
-  m_RootOrder: 5
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.35061288}
-  m_AnchorMax: {x: 1, y: 0.40716124}
-  m_AnchoredPosition: {x: 7.4996, y: -0.97665}
-  m_SizeDelta: {x: -15, y: 6.0467}
+  m_AnchorMin: {x: 0.25500003, y: 0.7206452}
+  m_AnchorMax: {x: 1, y: 0.8112259}
+  m_AnchoredPosition: {x: -1.0653992, y: 0.50982666}
+  m_SizeDelta: {x: 2.2322, y: -44}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1498981962
 MonoBehaviour:
@@ -1755,16 +1753,16 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 54
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 5
     m_MaxSize: 54
-    m_Alignment: 6
-    m_AlignByGeometry: 1
+    m_Alignment: 3
+    m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Encrypt Result\uFF1A\n"
+  m_Text: "Decrypt Result\uFF1A\n"
 --- !u!222 &1498981963
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1838,7 +1836,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Result...
+  m_Text: Decrypt Result...
 --- !u!222 &1540724987
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1870,17 +1868,17 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1680294026}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 845.16595, y: -862.83997, z: 0}
+  m_LocalPosition: {x: 1542.8723, y: -862.81995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 944536160}
   m_Father: {fileID: 209536540}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.845, y: 0}
-  m_AnchorMax: {x: 1, y: 0.099125}
-  m_AnchoredPosition: {x: -5, y: 2}
-  m_SizeDelta: {x: -24, y: -10}
+  m_AnchorMin: {x: 0.8193056, y: 0}
+  m_AnchorMax: {x: 1, y: 0.10331255}
+  m_AnchoredPosition: {x: -1, y: -2}
+  m_SizeDelta: {x: -32, y: -18}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1680294028
 MonoBehaviour:
@@ -1930,7 +1928,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
@@ -1994,21 +1992,21 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 34, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 104394883}
+  - {fileID: 536580920}
+  - {fileID: 1498981961}
   - {fileID: 840702514}
   - {fileID: 340314003}
   - {fileID: 616231527}
   - {fileID: 1119842147}
-  - {fileID: 1498981961}
+  - {fileID: 104394883}
   - {fileID: 253882110}
-  - {fileID: 536580920}
   m_Father: {fileID: 209536540}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 34}
-  m_SizeDelta: {x: 0, y: -443.81995}
+  m_SizeDelta: {x: 0, y: 1476.18}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1764890525
 CanvasRenderer:
@@ -2242,7 +2240,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Enter Header text...
+  m_Text: Header...
 --- !u!222 &1882552227
 CanvasRenderer:
   m_ObjectHideFlags: 0

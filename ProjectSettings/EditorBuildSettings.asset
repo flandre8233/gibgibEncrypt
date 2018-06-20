@@ -4,4 +4,7 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/gibgibEncrypt/example 1.unity
+    guid: 29c0b6ffa9377a543b21ac7b92b39902

@@ -12,10 +12,11 @@ public class outputManager : MonoBehaviour {
     public bool isEncryptOutPut;
 
     private void Start() {
-        replaceText();
+       // replaceText();
         verText.text = "Ver : "+Application.version;
     }
 
+    /*
      void replaceText() {
         if (isEncryptOutPut) {
             return;
@@ -26,4 +27,5 @@ public class outputManager : MonoBehaviour {
             item.text = item.text.Replace("En","De");
         }
     }
+    */
 }

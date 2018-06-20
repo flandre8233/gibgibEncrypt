@@ -7,6 +7,10 @@ public class gibgibEncryptTester : MonoBehaviour {
     public string InputSting ;
     public string DecryptPassword;
     public string OutputSting;
+
+    //static string path = Application.persistentDataPath + "/playerData.GEC";
+
+
     // Use this for initialization
     void Start () {
 		
@@ -14,6 +18,7 @@ public class gibgibEncryptTester : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        /*
         if (Input.GetKeyDown(KeyCode.E) ) {
             print( InputSting.Length );
             OutputSting = gibgibEncryptSystem.Encrypt(InputSting, EncryptPassword);
@@ -24,5 +29,10 @@ public class gibgibEncryptTester : MonoBehaviour {
             OutputSting = gibgibEncryptSystem.Decrypt(InputSting, DecryptPassword);
             print(OutputSting);
         }
+        */
+
+        if (Input.GetKeyDown(KeyCode.N)) {
+        }
     }
+ 
 }
