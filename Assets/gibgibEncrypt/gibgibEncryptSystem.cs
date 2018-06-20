@@ -37,6 +37,7 @@ public static class gibgibEncryptSystem  {
 
         if (splitedArray.Length != 4 || splitedArray[ 0 ] != "#GIBGIB_ENC") {
             outPutData = "Tried to decrypt an invalid valid GIBGIB_ENC file ";
+            return;
         }
 
         string[] splitedPasswordArray = splitedArray[ 1 ].Split(' ');

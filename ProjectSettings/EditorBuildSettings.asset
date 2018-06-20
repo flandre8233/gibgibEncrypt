@@ -6,5 +6,5 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/gibgibEncrypt/example 1.unity
-    guid: 29c0b6ffa9377a543b21ac7b92b39902
+    path: Assets/gibgibEncrypt/example.unity
+    guid: 357a40a3a0eb1104aaad67f7b2147102
