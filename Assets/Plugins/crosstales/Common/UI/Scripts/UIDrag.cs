@@ -10,6 +10,18 @@ namespace Crosstales.UI
         private float offsetX;
         private float offsetY;
 
+        private Transform tf;
+
+        #endregion
+
+
+        #region MonoBehaviour methods
+
+        public void Start()
+        {
+            tf = transform;
+        }
+
         #endregion
 
 
@@ -17,13 +29,13 @@ namespace Crosstales.UI
 
         public void BeginDrag()
         {
-            offsetX = transform.position.x - Input.mousePosition.x;
-            offsetY = transform.position.y - Input.mousePosition.y;
+            offsetX = tf.position.x - Input.mousePosition.x;
+            offsetY = tf.position.y - Input.mousePosition.y;
         }
 
         public void OnDrag()
         {
-            transform.position = new Vector3(offsetX + Input.mousePosition.x, offsetY + Input.mousePosition.y);
+            tf.position = new Vector3(offsetX + Input.mousePosition.x, offsetY + Input.mousePosition.y);
         }
 
         #endregion

@@ -1,4 +1,4 @@
-﻿#if UNITY_STANDALONE_WIN && !UNITY_EDITOR
+﻿#if (UNITY_STANDALONE_WIN && !UNITY_EDITOR) || CT_ENABLED
 using UnityEngine;
 using System;
 using System.IO;
@@ -15,15 +15,15 @@ namespace Crosstales.FB.Wrapper
     /// <summary>File browser implementation for Windows.</summary>
     public class FileBrowserWindows : FileBrowserBase
     {
-#region Variables
+        #region Variables
 
         [DllImport("user32.dll")]
         private static extern IntPtr GetActiveWindow();
 
-#endregion
+        #endregion
 
 
-#region Implemented methods
+        #region Implemented methods
 
         public override string[] OpenFiles(string title, string directory, ExtensionFilter[] extensions, bool multiselect)
         {
@@ -46,7 +46,7 @@ namespace Crosstales.FB.Wrapper
                 fd.Multiselect = multiselect;
 
                 //Debug.Log("multi");
-                
+
                 if (!string.IsNullOrEmpty(directory))
                 {
                     fd.FileName = getPath(directory);
@@ -141,10 +141,10 @@ namespace Crosstales.FB.Wrapper
             cb.Invoke(SaveFile(title, directory, defaultName, extensions));
         }
 
-#endregion
+        #endregion
 
 
-#region Private methods
+        #region Private methods
 
         private static string getFilterFromFileExtensionList(ExtensionFilter[] extensions)
         {
@@ -186,7 +186,7 @@ namespace Crosstales.FB.Wrapper
             return Path.GetDirectoryName(directoryPath) + Path.DirectorySeparatorChar;
         }
 
-#endregion
+        #endregion
     }
 
     public class WindowWrapper : IWin32Window

@@ -29,6 +29,8 @@ namespace Crosstales.UI
 
         private GameObject panel;
 
+        private Transform tf;
+
         #endregion
 
 
@@ -36,9 +38,15 @@ namespace Crosstales.UI
 
         public void Start()
         {
-            panel = transform.Find("Panel").gameObject;
+            tf = transform;
 
-            startPos = transform.position;
+#if UNITY_2017_1_OR_NEWER
+            panel = tf.Find("Panel").gameObject;
+#else
+            panel = tf.FindChild("Panel").gameObject;
+#endif
+
+            startPos = tf.position;
 
             ClosePanel();
 
@@ -61,7 +69,7 @@ namespace Crosstales.UI
             {
                 openProgress += Speed * Time.deltaTime;
 
-                transform.position = Vector3.Lerp(lerpPos, centerPos, openProgress);
+                tf.position = Vector3.Lerp(lerpPos, centerPos, openProgress);
             }
             else if (close)
             {
@@ -69,7 +77,7 @@ namespace Crosstales.UI
                 {
                     closeProgress += Speed * Time.deltaTime;
 
-                    transform.position = Vector3.Lerp(lerpPos, startPos, closeProgress);
+                    tf.position = Vector3.Lerp(lerpPos, startPos, closeProgress);
                 }
                 else
                 {
@@ -118,7 +126,7 @@ namespace Crosstales.UI
             focus = gameObject.GetComponent<UIFocus>();
             focus.OnPanelEnter();
 
-            lerpPos = transform.position;
+            lerpPos = tf.position;
             open = true;
             close = false;
             openProgress = 0f;
@@ -126,7 +134,7 @@ namespace Crosstales.UI
 
         public void ClosePanel()
         {
-            lerpPos = transform.position;
+            lerpPos = tf.position;
             open = false;
             close = true;
             closeProgress = 0f;

@@ -26,20 +26,23 @@
         /// <summary>Loads the all changable variables.</summary>
         public static void Load()
         {
+			/*
             if (Common.Util.CTPlayerPrefs.HasKey(Constants.KEY_DEBUG))
             {
                 DEBUG = Common.Util.CTPlayerPrefs.GetBool(Constants.KEY_DEBUG);
             }
-
+			*/
             isLoaded = true;
         }
 
         /// <summary>Saves the all changable variables.</summary>
         public static void Save()
         {
+			/*
             Common.Util.CTPlayerPrefs.SetBool(Constants.KEY_DEBUG, DEBUG);
 
             Common.Util.CTPlayerPrefs.Save();
+            */
         }
 
         #endregion

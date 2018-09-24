@@ -1,4 +1,4 @@
-﻿# FileBrowser 1.2.2
+﻿# FileBrowser 2018.2.1b1
 
 Thank you for using our asset "File Browser"! 
 If you have any questions about this asset, send us an email at [fb@crosstales.com](mailto:fb@crosstales.com). 
@@ -53,6 +53,7 @@ CH-8002 Zürich
 * [Email](mailto:fb@crosstales.com)
 
 ### Social media
+* [Discord](https://discord.gg/ZbZ2sh4)
 * [Facebook](https://www.facebook.com/crosstales/)
 * [Twitter](https://twitter.com/crosstales)
 * [LinkedIN](https://www.linkedin.com/company/crosstales)
@@ -75,4 +76,4 @@ CH-8002 Zürich
 * [macOS-Demo](https://www.crosstales.com/media/data/assets/FileBrowser/downloads/FileBrowser_mac.zip)
 
 
-`Version: 07.06.2018 14:48`
+`Version: 20.09.2018`

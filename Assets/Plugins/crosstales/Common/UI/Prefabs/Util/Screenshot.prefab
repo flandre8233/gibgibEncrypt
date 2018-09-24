@@ -40,7 +40,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd0c53ef60a81f140a5f5c69d6e738bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Prefix: 43545f53637265656e73686f74
+  Prefix: CT_Screenshot
   Scale: 1
   KeyCode: 289
 --- !u!1001 &100100000

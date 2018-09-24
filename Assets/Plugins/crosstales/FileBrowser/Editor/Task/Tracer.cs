@@ -3,18 +3,18 @@ using Crosstales.FB.EditorUtil;
 
 namespace Crosstales.FB.EditorTask
 {
-    /// <summary>Gather some telemetry data for the asset.</summary>
+    /// <summary>Gather some tracing data for the asset.</summary>
     [InitializeOnLoad]
-    public static class Telemetry
+    public static class Tracer
     {
         #region Constructor
 
-        static Telemetry()
+        static Tracer()
         {
             string lastDate = string.Empty;
-            if (Common.Util.CTPlayerPrefs.HasKey(EditorConstants.KEY_TELEMETRY_DATE))
+            if (Common.Util.CTPlayerPrefs.HasKey(EditorConstants.KEY_TRACER_DATE))
             {
-                lastDate = Common.Util.CTPlayerPrefs.GetString(EditorConstants.KEY_TELEMETRY_DATE);
+                lastDate = Common.Util.CTPlayerPrefs.GetString(EditorConstants.KEY_TRACER_DATE);
             }
  
             string date = System.DateTime.Now.ToString("yyyyMMdd"); // every day
@@ -22,9 +22,9 @@ namespace Crosstales.FB.EditorTask
 
             if (!date.Equals(lastDate))
             {
-                GAApi.Event(typeof(Telemetry).Name, "Startup");
+                GAApi.Event(typeof(Tracer).Name, "Startup");
 
-                Common.Util.CTPlayerPrefs.SetString(EditorConstants.KEY_TELEMETRY_DATE, date);
+                Common.Util.CTPlayerPrefs.SetString(EditorConstants.KEY_TRACER_DATE, date);
             }
         }
 

@@ -23,7 +23,7 @@ namespace Crosstales.UI
 
         public void OpenAssetstore()
         {
-            Application.OpenURL("https://goo.gl/qwtXyb");
+            Application.OpenURL(Common.Util.BaseConstants.ASSET_CT_URL);
         }
 
         #endregion

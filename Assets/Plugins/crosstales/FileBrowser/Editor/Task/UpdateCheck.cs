@@ -8,22 +8,17 @@ namespace Crosstales.FB.EditorTask
     [InitializeOnLoad]
     public static class UpdateCheck
     {
-       #region Variables
+        #region Variables
 
         public const string TEXT_NOT_CHECKED = "Not checked.";
         public const string TEXT_NO_UPDATE = "No update available - you are using the latest version.";
 
         private static UpdateStatus status = UpdateStatus.NOT_CHECKED;
 
-#if !UNITY_WSA || UNITY_EDITOR
-        private static char[] splitChar = new char[] { ';' };
-
-        //private static System.Threading.Thread worker;
-#endif
+        private static readonly char[] splitChar = new char[] { ';' };
 
         #endregion
 
-#if !UNITY_WSA || UNITY_EDITOR
 
         #region Constructor
 
@@ -38,22 +33,19 @@ namespace Crosstales.FB.EditorTask
                 string date = System.DateTime.Now.ToString("yyyyMMdd"); // every day
                 //string date = System.DateTime.Now.ToString("yyyyMMddHHmm"); // every minute (for tests)
 
-                if (Util.Constants.DEV_DEBUG)
+                if (Common.Util.BaseConstants.DEV_DEBUG)
                     Debug.Log("Last check: " + lastDate);
 
                 if (!date.Equals(lastDate))
                 {
-                    if (FB.Util.Helper.isInternetAvailable)
+                    if (Common.Util.BaseHelper.isInternetAvailable)
                     {
                         if (Util.Config.DEBUG)
                             Debug.Log("Checking for update...");
 
+                        new System.Threading.Thread(() => updateCheck()).Start();
+
                         EditorPrefs.SetString(EditorConstants.KEY_UPDATE_DATE, date);
-
-                        //worker = new System.Threading.Thread(() => updateCheck());
-                        //worker.Start();
-
-                        updateCheck ();
                     }
                     else
                     {
@@ -76,7 +68,6 @@ namespace Crosstales.FB.EditorTask
 
         #endregion
 
-#endif
 
         #region Static methods
 
@@ -106,7 +97,7 @@ namespace Crosstales.FB.EditorTask
             {
                 result = TEXT_NO_UPDATE;
             }
-            
+
             st = status;
         }
 
@@ -115,7 +106,6 @@ namespace Crosstales.FB.EditorTask
 
         #region Private methods
 
-#if !UNITY_WSA || UNITY_EDITOR
         private static void updateCheck()
         {
             string[] data = readData();
@@ -201,7 +191,7 @@ namespace Crosstales.FB.EditorTask
 
                 if (option == 0)
                 {
-                    Application.OpenURL(Util.Constants.ASSET_AUTHOR_URL);
+                    Application.OpenURL(Common.Util.BaseConstants.ASSET_AUTHOR_URL);
                 }
                 else if (option == 1)
                 {
@@ -283,35 +273,33 @@ namespace Crosstales.FB.EditorTask
                 sb.Append(System.Environment.NewLine);
                 sb.Append(System.Environment.NewLine);
                 sb.AppendLine("Please check the link for more information:");
-                sb.AppendLine(Util.Constants.ASSET_AUTHOR_URL);
+                sb.AppendLine(Common.Util.BaseConstants.ASSET_AUTHOR_URL);
             }
 
             return sb.ToString();
         }
-#endif
 
         private static string[] readData()
         {
             string[] data = null;
 
-#if !UNITY_WSA || UNITY_EDITOR
-
             try
             {
-                System.Net.ServicePointManager.ServerCertificateValidationCallback = Util.Helper.RemoteCertificateValidationCallback;
+                System.Net.ServicePointManager.ServerCertificateValidationCallback = Common.Util.BaseHelper.RemoteCertificateValidationCallback;
 
                 using (System.Net.WebClient client = new Common.Util.CTWebClient())
                 {
                     string content = client.DownloadString(Util.Constants.ASSET_UPDATE_CHECK_URL);
 
-                    foreach (string line in Util.Helper.SplitStringToLines(content))
+                    foreach (string line in Common.Util.BaseHelper.SplitStringToLines(content))
                     {
                         if (line.StartsWith(EditorConstants.ASSET_UID.ToString()))
                         {
                             data = line.Split(splitChar, System.StringSplitOptions.RemoveEmptyEntries);
 
                             if (data != null && data.Length >= 3)
-                            { //valid record?
+                            { 
+                                //valid record?
                                 break;
                             }
                             else
@@ -327,7 +315,6 @@ namespace Crosstales.FB.EditorTask
                 Debug.LogError("Could not load update file: " + System.Environment.NewLine + ex);
             }
 
-#endif
             return data;
         }
 

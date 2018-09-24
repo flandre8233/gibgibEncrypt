@@ -23,7 +23,7 @@ namespace Crosstales.FB.EditorUtil
         public static bool CT_REMINDER_CHECK = EditorConstants.DEFAULT_CT_REMINDER_CHECK;
         
         /// <summary>Enable or disable anonymous telemetry data.</summary>
-        public static bool TELEMETRY = EditorConstants.DEFAULT_TELEMETRY;
+        public static bool TELEMETRY = EditorConstants.DEFAULT_TRACER;
 
         /// <summary>Is the configuration loaded?</summary>
         public static bool isLoaded = false;
@@ -53,7 +53,7 @@ namespace Crosstales.FB.EditorUtil
             UPDATE_OPEN_UAS = EditorConstants.DEFAULT_UPDATE_OPEN_UAS;
             REMINDER_CHECK = EditorConstants.DEFAULT_REMINDER_CHECK;
             CT_REMINDER_CHECK = EditorConstants.DEFAULT_CT_REMINDER_CHECK;
-            TELEMETRY = EditorConstants.DEFAULT_TELEMETRY;
+            TELEMETRY = EditorConstants.DEFAULT_TRACER;
         }
 
         /// <summary>Loads the all changable variables.</summary>
@@ -79,9 +79,9 @@ namespace Crosstales.FB.EditorUtil
                 CT_REMINDER_CHECK = Common.Util.CTPlayerPrefs.GetBool(EditorConstants.KEY_CT_REMINDER_CHECK);
             }
             
-            if (Common.Util.CTPlayerPrefs.HasKey(EditorConstants.KEY_TELEMETRY))
+            if (Common.Util.CTPlayerPrefs.HasKey(EditorConstants.KEY_TRACER))
             {
-                TELEMETRY = Common.Util.CTPlayerPrefs.GetBool(EditorConstants.KEY_TELEMETRY);
+                TELEMETRY = Common.Util.CTPlayerPrefs.GetBool(EditorConstants.KEY_TRACER);
             }
 
             isLoaded = true;
@@ -94,7 +94,7 @@ namespace Crosstales.FB.EditorUtil
             Common.Util.CTPlayerPrefs.SetBool(EditorConstants.KEY_UPDATE_OPEN_UAS, UPDATE_OPEN_UAS);
             Common.Util.CTPlayerPrefs.SetBool(EditorConstants.KEY_REMINDER_CHECK, REMINDER_CHECK);
             Common.Util.CTPlayerPrefs.SetBool(EditorConstants.KEY_CT_REMINDER_CHECK, CT_REMINDER_CHECK);
-            Common.Util.CTPlayerPrefs.SetBool(EditorConstants.KEY_TELEMETRY, TELEMETRY);
+            Common.Util.CTPlayerPrefs.SetBool(EditorConstants.KEY_TRACER, TELEMETRY);
 
             Common.Util.CTPlayerPrefs.Save();
         }

@@ -8,10 +8,14 @@ namespace Crosstales.UI
     {
         #region Variables
 
-        public string CanvasName = "Canvas";
+        /// <summary>Name of the gameobject containing the UIWindowManager.</summary>
+        [Tooltip("Name of the gameobject containing the UIWindowManager.")]
+        public string ManagerName = "Canvas";
 
         private UIWindowManager manager;
         private Image image;
+
+        private Transform tf;
 
         #endregion
 
@@ -20,9 +24,15 @@ namespace Crosstales.UI
 
         public void Start()
         {
-            manager = GameObject.Find(CanvasName).GetComponent<UIWindowManager>();
+            tf = transform;
 
-            image = transform.Find("Panel/Header").GetComponent<Image>();
+            manager = GameObject.Find(ManagerName).GetComponent<UIWindowManager>();
+
+#if UNITY_2017_1_OR_NEWER
+            image = tf.Find("Panel/Header").GetComponent<Image>();
+#else
+            image = tf.FindChild("Panel/Header").GetComponent<Image>();
+#endif
         }
 
         #endregion
@@ -38,10 +48,10 @@ namespace Crosstales.UI
             c.a = 255;
             image.color = c;
 
-            transform.SetAsLastSibling(); //move to the front (on parent)
-            transform.SetAsFirstSibling(); //move to the back (on parent)
-            transform.SetSiblingIndex(-1); //move to position, whereas 0 is the backmost, transform.parent.childCount -1 is the frontmost position 
-            transform.GetSiblingIndex(); //get the position in the hierarchy (on parent)
+            tf.SetAsLastSibling(); //move to the front (on parent)
+            tf.SetAsFirstSibling(); //move to the back (on parent)
+            tf.SetSiblingIndex(-1); //move to position, whereas 0 is the backmost, transform.parent.childCount -1 is the frontmost position 
+            tf.GetSiblingIndex(); //get the position in the hierarchy (on parent)
         }
 
         #endregion

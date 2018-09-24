@@ -821,7 +821,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Asset Name
+  m_Text: crosstales LLC - Common
 --- !u!114 &11413150
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1498,7 +1498,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0.8.0
+  m_Text: 2018.2.1
 --- !u!114 &11440236
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1511,6 +1511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 3
+  Dependencies: []
 --- !u!114 &11443760
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1622,7 +1623,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\xA9 2016-2017 by crosstales LLC"
+  m_Text: "\xA9 2016-2018 by crosstales LLC"
 --- !u!114 &11448352
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2090,7 +2091,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: truerandom@crosstales.com
+  m_Text: assets@crosstales.com
 --- !u!114 &11483100
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2208,6 +2209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 584ba5e010da8db4d8a6018e134fe2fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ManagerName: Canvas
 --- !u!114 &11489214
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2290,7 +2292,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 11486420}
-          m_MethodName: onPanelEnter
+          m_MethodName: OnPanelEnter
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2324,7 +2326,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 11486420}
-          m_MethodName: onPanelEnter
+          m_MethodName: OnPanelEnter
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

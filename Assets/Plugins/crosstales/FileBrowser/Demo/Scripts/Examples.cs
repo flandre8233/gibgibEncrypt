@@ -31,9 +31,9 @@ namespace Crosstales.FB.Demo
             };
             */
             
-            string extensions = "";
+            string extensions = string.Empty;
             
-            string path = FileBrowser.OpenSingleFile("Open File", "", extensions);
+            string path = FileBrowser.OpenSingleFile("Open File", string.Empty, extensions);
 
             //Debug.Log("Selected file: " + path);
             
@@ -51,9 +51,9 @@ namespace Crosstales.FB.Demo
             };
             */
             
-            string extensions = "";
+            string extensions = string.Empty;
             
-            string[] paths = FileBrowser.OpenFiles("Open Files", "", extensions, true);
+            string[] paths = FileBrowser.OpenFiles("Open Files", string.Empty, extensions, true);
 
             /*
             foreach (string path in paths)
@@ -78,7 +78,7 @@ namespace Crosstales.FB.Demo
         public void OpenFolders() {
             //Debug.Log("OpenFolders");
             
-            //string[] paths = FileBrowser.OpenFolders("Open Files", "", true);
+            //string[] paths = FileBrowser.OpenFolders("Open Files", string.Empty, true);
             string[] paths = FileBrowser.OpenFolders("Open Folders");
 
             /*
@@ -104,7 +104,7 @@ namespace Crosstales.FB.Demo
             
             string extensions = "txt";
             
-            string path = FileBrowser.SaveFile("Save File", "", "MySaveFile", extensions);
+            string path = FileBrowser.SaveFile("Save File", string.Empty, "MySaveFile", extensions);
             
             //Debug.Log("Save file: " + path);
             
@@ -122,15 +122,15 @@ namespace Crosstales.FB.Demo
             };
             */
             
-            string extensions = "";
+            string extensions = string.Empty;
             
-            FileBrowser.OpenFilesAsync("Open Files", "", extensions, true, (string[] paths) => { writePaths(paths); });
+            FileBrowser.OpenFilesAsync("Open Files", string.Empty, extensions, true, (string[] paths) => { writePaths(paths); });
         }
         
         public void OpenFoldersAsync() {
             //Debug.Log("OpenFoldersAsync");
             
-            FileBrowser.OpenFoldersAsync("Open Folders", "", true, (string[] paths) => { writePaths(paths); });
+            FileBrowser.OpenFoldersAsync("Open Folders", string.Empty, true, (string[] paths) => { writePaths(paths); });
         }
         
         public void SaveFileAsync() {
@@ -146,7 +146,7 @@ namespace Crosstales.FB.Demo
             
             string extensions = "txt";
             
-            FileBrowser.SaveFileAsync("Save File", "", "MySaveFile", extensions, (string paths) => { writePaths(paths); });
+            FileBrowser.SaveFileAsync("Save File", string.Empty, "MySaveFile", extensions, (string paths) => { writePaths(paths); });
         }
         
         private void writePaths(params string[] paths) {

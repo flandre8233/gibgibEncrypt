@@ -33,7 +33,7 @@ namespace Crosstales.FB.EditorTask
 
                     if (option == 0)
                     {
-                        Application.OpenURL(Util.Constants.ASSET_CT_URL);
+                        Application.OpenURL(Common.Util.BaseConstants.ASSET_CT_URL);
                         EditorConfig.CT_REMINDER_CHECK = false;
 
                         Debug.LogWarning("+++ Thank you for visiting our assets! +++");

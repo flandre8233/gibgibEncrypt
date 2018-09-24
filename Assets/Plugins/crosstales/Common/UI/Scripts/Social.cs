@@ -33,6 +33,11 @@ namespace Crosstales.UI
             Application.OpenURL(Common.Util.BaseConstants.ASSET_SOCIAL_YOUTUBE);
         }
 
+        public void Discord()
+        {
+            Application.OpenURL(Common.Util.BaseConstants.ASSET_SOCIAL_DISCORD);
+        }
+
         #endregion
     }
 }

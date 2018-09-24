@@ -217,8 +217,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 336aa0e56bff18c4da3bd489055cc23f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minSize: {x: 100, y: 100}
-  maxSize: {x: 400, y: 400}
+  MinSize: {x: 300, y: 160}
+  MaxSize: {x: 800, y: 600}
 --- !u!114 &11416926
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -375,7 +375,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 11463330}
-          m_MethodName: onPanelEnter
+          m_MethodName: OnPanelEnter
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -409,7 +409,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 11463330}
-          m_MethodName: onPanelEnter
+          m_MethodName: OnPanelEnter
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -531,7 +531,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 584ba5e010da8db4d8a6018e134fe2fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CanvasName: 43616e766173
+  ManagerName: Canvas
 --- !u!114 &11464808
 MonoBehaviour:
   m_ObjectHideFlags: 1

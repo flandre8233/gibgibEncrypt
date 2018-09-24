@@ -56,8 +56,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 336aa0e56bff18c4da3bd489055cc23f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minSize: {x: 300, y: 160}
-  maxSize: {x: 800, y: 600}
+  MinSize: {x: 300, y: 160}
+  MaxSize: {x: 800, y: 600}
 --- !u!222 &22279734
 CanvasRenderer:
   m_ObjectHideFlags: 1

@@ -9,7 +9,7 @@
         public const string KEY_UPDATE_OPEN_UAS = Util.Constants.KEY_PREFIX + "UPDATE_OPEN_UAS";
         public const string KEY_REMINDER_CHECK = Util.Constants.KEY_PREFIX + "REMINDER_CHECK";
         public const string KEY_CT_REMINDER_CHECK = Util.Constants.KEY_PREFIX + "CT_REMINDER_CHECK";
-        public const string KEY_TELEMETRY = Util.Constants.KEY_PREFIX + "TELEMETRY";
+        public const string KEY_TRACER = Util.Constants.KEY_PREFIX + "TRACER";
 
         // Keys for the configuration of the asset
         public const string KEY_UPDATE_DATE = Util.Constants.KEY_PREFIX + "UPDATE_DATE";
@@ -20,7 +20,7 @@
         public const string KEY_CT_REMINDER_DATE = Util.Constants.KEY_PREFIX + "CT_REMINDER_DATE";
         public const string KEY_CT_REMINDER_COUNT = Util.Constants.KEY_PREFIX + "CT_REMINDER_COUNT";
         
-        public const string KEY_TELEMETRY_DATE = Util.Constants.KEY_PREFIX + "TELEMETRY_DATE";
+        public const string KEY_TRACER_DATE = Util.Constants.KEY_PREFIX + "TRACER_DATE";
 
         // Default values
         //public const string DEFAULT_ASSET_PATH = "/crosstales/FileBrowser/";
@@ -28,7 +28,7 @@
         public const bool DEFAULT_UPDATE_OPEN_UAS = false;
         public const bool DEFAULT_REMINDER_CHECK = true;
         public const bool DEFAULT_CT_REMINDER_CHECK = true;
-        public const bool DEFAULT_TELEMETRY = true;
+        public const bool DEFAULT_TRACER = true;
 
         #endregion
 

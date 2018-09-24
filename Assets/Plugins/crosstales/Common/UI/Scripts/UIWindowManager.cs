@@ -24,7 +24,12 @@ namespace Crosstales.UI
         {
             foreach (GameObject window in Windows)
             {
+#if UNITY_2017_1_OR_NEWER
                 image = window.transform.Find("Panel/Header").GetComponent<Image>();
+#else
+                image = window.transform.FindChild("Panel/Header").GetComponent<Image>();
+#endif
+
                 Color c = image.color;
                 c.a = 0.2f;
                 image.color = c;
@@ -42,13 +47,22 @@ namespace Crosstales.UI
             {
                 if (window != x)
                 {
+#if UNITY_2017_1_OR_NEWER
                     image = window.transform.Find("Panel/Header").GetComponent<Image>();
+#else
+                    image = window.transform.FindChild("Panel/Header").GetComponent<Image>();
+#endif
+
                     Color c = image.color;
                     c.a = 0.2f;
                     image.color = c;
                 }
 
+#if UNITY_2017_1_OR_NEWER
                 DontTouch = window.transform.Find("Panel/DontTouch").gameObject;
+#else
+                DontTouch = window.transform.FindChild("Panel/DontTouch").gameObject;
+#endif
                 DontTouch.SetActive(window != x);
             }
         }

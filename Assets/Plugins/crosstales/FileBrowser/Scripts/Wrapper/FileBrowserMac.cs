@@ -1,4 +1,4 @@
-﻿#if UNITY_STANDALONE_OSX && !UNITY_EDITOR
+﻿#if (UNITY_STANDALONE_OSX && !UNITY_EDITOR) || CT_ENABLED
 using System;
 using System.Runtime.InteropServices;
 
@@ -8,6 +8,7 @@ namespace Crosstales.FB.Wrapper
     public class FileBrowserMac : FileBrowserBase
     {
         #region Variables
+
         private static Action<string[]> _openFileCb;
         private static Action<string[]> _openFolderCb;
         private static Action<string> _saveFileCb;
