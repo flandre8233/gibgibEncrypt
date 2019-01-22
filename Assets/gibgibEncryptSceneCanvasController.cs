@@ -6,7 +6,6 @@ using System.IO;
 using Crosstales.FB;
 using gibgibEncrypt.Encrypt;
 using gibgibEncrypt.Cipher;
-using gibgibEncrypt.Cipher.litJsonCipherClass;
 
 public class gibgibEncryptSceneCanvasController : SingletonMonoBehavior<gibgibEncryptSceneCanvasController> {
     [SerializeField]
@@ -83,16 +82,17 @@ public class gibgibEncryptSceneCanvasController : SingletonMonoBehavior<gibgibEn
     public void OnLoadCipherButtonClick() {
         string path = FileBrowser.OpenSingleFile("open .GKEY file", "", "GKEY");
         if (path.Length != 0) {
-            string fileName = Path.GetFileName(path);
-            string fileContent = File.ReadAllText(path);
             //must use list
-            litJsonCipherArrayClass JSONClass = LitJson.JsonMapper.ToObject<litJsonCipherArrayClass>(fileContent.ToString());
-            gibgibCipher cipher = litJsonCipherArrayClass.CipherListToCipherArray(JSONClass);
+            //litJsonCipherArrayClass JSONClass = LitJson.JsonMapper.ToObject<litJsonCipherArrayClass>(fileContent.ToString());
+            //gibgibCipher cipher = litJsonCipherArrayClass.CipherListToCipherArray(JSONClass);
+
+            gibgibCipher cipher = CipherSaveLoadManager.LoadNote(path);
+
             gibgibCipherSystem.loadCipher(cipher);
             loadedCipherName = Path.GetFileName(path);
             lastKnowCipherName = loadedCipherName;
             updateLoadedCipherText();
-            StartCoroutine(timer(3.0f, "Successful Loaded "+ fileName));
+            StartCoroutine(timer(3.0f, "Successful Loaded "));
         }
     }
 
@@ -105,10 +105,18 @@ public class gibgibEncryptSceneCanvasController : SingletonMonoBehavior<gibgibEn
             loadedCipherName = fileName;
             lastKnowCipherName = loadedCipherName;
             updateLoadedCipherText();
-            litJsonCipherArrayClass JSONClass = litJsonCipherArrayClass.CipherArrayToCipherList(cipher);
-            string fileContent = LitJson.JsonMapper.ToJson(JSONClass);
 
-            File.WriteAllText(path, fileContent);
+            print(cipher.cipherArray.Length);
+
+            //litJsonCipherArrayClass JSONClass = litJsonCipherArrayClass.CipherArrayToCipherList(cipher);
+            //string fileContent = LitJson.JsonMapper.ToJson(JSONClass);
+
+            //string fileContent;
+
+            //File.WriteAllText(path, fileContent);
+
+            CipherSaveLoadManager.saveNote(cipher,path);
+
             StartCoroutine(timer(3.0f, "Successful Generate "+ fileName + " file"));
         } else {
             StartCoroutine(timer(3.0f, "you dont have any key input"));

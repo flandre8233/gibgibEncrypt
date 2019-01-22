@@ -7,6 +7,8 @@ using gibgibEncrypt.Encrypt;
 using gibgibEncrypt.EncVar;
 using gibgibEncrypt.Cipher;
 
+using System.IO;
+
 public class example_2_Script : MonoBehaviour {
 [SerializeField]
 Text showtext;
@@ -15,10 +17,11 @@ int showMaxHP;
 int showHP;
 
 [SerializeField]
-int MaxHP;
+EncInt MaxHP;
 [SerializeField]
-int HP;
+EncInt HP;
 	void Start () {
+        gibgibCipherSystem.loadCipherFromFilePath("Assets/Resources/gibgibCipher_1-25.GKEY");
 		HP = 75;
 		MaxHP = 100;
 	}
