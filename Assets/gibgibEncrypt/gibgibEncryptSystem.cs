@@ -8,7 +8,7 @@ namespace gibgibEncrypt {
     //encrypt algorithm Ver 1.05_EncVar
     namespace Encrypt {
         public static class gibgibEncryptSystem {
-            private static string ver = "V1.04_EncVar";
+            private static string ver = "V1.05_EncVar";
             static Random rnd = new Random(Guid.NewGuid().GetHashCode());
             public static string Encrypt(string header, string data, string password, gibgibCipher cipher) {
                 string outPutData = "";
@@ -20,7 +20,6 @@ namespace gibgibEncrypt {
                 outPutData += "#GIBGIB_ENC:";
                 outPutData += ver + ":";
 
-                outPutData += Convert.ToString(passwordInt * genPassWord - genPassWord, 16) + ":";
                 if (header == null || header == "") {
                     outPutData += "0:";
                 } else {
@@ -58,14 +57,13 @@ namespace gibgibEncrypt {
 
                 string[] splitedArray = data.Split(':');
 
-                if (splitedArray.Length != 5 || splitedArray[ 0 ] != "#GIBGIB_ENC") {
+                if (splitedArray.Length != 4 || splitedArray[ 0 ] != "#GIBGIB_ENC") {
                     outPutData = "Tried to decrypt an invalid valid GIBGIB_ENC file ";
                     return;
                 }
 
-                string[] splitedPasswordArray = splitedArray[ 2 ].Split(' ');
-                string[] splitedHeaderArray = splitedArray[ 3 ].Split(' ');
-                string[] splitedMSGArray = splitedArray[ 4 ].Split(' ');
+                string[] splitedHeaderArray = splitedArray[ 2 ].Split(' ');
+                string[] splitedMSGArray = splitedArray[ 3 ].Split(' ');
 
                 int genPassWord = Int32.Parse(splitedMSGArray[ 0 ], System.Globalization.NumberStyles.HexNumber);
                 genPassWord /= 8233;
@@ -377,7 +375,6 @@ namespace gibgibEncrypt {
 
                     for (int j = 0; j < 32; j++) {
                         Random rand = new Random(Guid.NewGuid().GetHashCode());
-                        Random rand2 = new Random(Guid.NewGuid().GetHashCode());
                         int randNum = rand.Next(0, 16);
                         int randNum2 = rand.Next(0, 16);
                         changeTwoIndex(i,randNum, randNum2);
